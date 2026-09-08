@@ -16,7 +16,7 @@ jobs:
           github-token: ${{ secrets.GH_PAT }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'YOUR_ORG',
+              owner: 'EnterprisePortal',
               repo: 'Repo-1',
               workflow_id: 'build.yml',
               ref: 'main'
@@ -36,7 +36,7 @@ jobs:
           github-token: ${{ secrets.GH_PAT }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'YOUR_ORG',
+              owner: 'EnterorisePortal',
               repo: 'Repo-2',
               workflow_id: 'build.yml',
               ref: 'main'
