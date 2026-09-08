@@ -13,7 +13,7 @@ jobs:
       - name: Trigger Repo 1 Workflow
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ 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 }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'YOUR_ORG',
@@ -33,7 +33,7 @@ jobs:
       - name: Trigger Repo 2 Workflow
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ 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 }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'YOUR_ORG',
